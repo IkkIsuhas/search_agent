@@ -141,7 +141,7 @@ Output:
 
 ```
 <p align="center">
-  <img src="output.png" width="700">
+  <img src="./output.png" width="700">
 </p>
 ```
 
