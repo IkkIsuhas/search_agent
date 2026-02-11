@@ -139,13 +139,9 @@ Enter your query: latest AI news and calculate 10*5
 
 Output:
 
-```
 <p align="center">
   <img src="./output.png" width="700">
-</p>
-```
-
----
+  </p>
 
 ## 🧾 Response Parsing
 
