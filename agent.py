@@ -4,6 +4,7 @@ from langchain.tools import tool
 from langchain_classic.prompts import PromptTemplate
 from langchain_community.tools.tavily_search import TavilySearchResults
 from datetime import datetime
+from simpleeval import simple_eval
 import requests
 
 import os
@@ -24,7 +25,7 @@ def get_current_date(query : str) -> str:
 def get_calculator(expression: str) -> str:
      """safely eveluate mathmatical expression"""
      try:
-          result = eval(expression)
+          result = simple_eval(expression)
           return result
      except Exception as e:
           return f"Error calculating: {e}"
